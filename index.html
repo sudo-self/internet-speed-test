@@ -14,7 +14,7 @@ function I(i){return document.getElementById(i);}
 var s=new Speedtest(); //create speedtest object
 
 var meterBk=/Trident.*rv:(\d+\.\d+)/i.test(navigator.userAgent)?"#EAEAEA":"#8#1B1B1B";
-var dlColor="#6f1414",
+var dlColor="#2FF924",
 	ulColor="#faf7f71";
 var progColor=meterBk;
 
@@ -114,7 +114,7 @@ function initUI(){
 <style type="text/css">
 	html,body{
 		border:none; padding:0; margin:0;
-		background:#c8c6c6;
+		background:#9a9a9a;
 		color:#2f0404;
 	}
 	body{
@@ -145,10 +145,10 @@ function initUI(){
 		color:#efe4e4;
 	}
 	#startStopBtn:before{
-		content:"TEST SPEED";
+		content:"FORCE";
 	}
 	#startStopBtn.running:before{
-		content:"STOP TEST";
+		content:"DARTH V";
 	}
 	#test{
 		margin-top:2em;
@@ -219,9 +219,9 @@ function initUI(){
 		}
 	}
 </style>
-<title>SpeedTest</title>
+<title>FORCE MEASURE</title>
 <div class="container">
-	<h2><p>Broadband 🏴‍☠️ ☠ SpeedTest</p></h2><hr>
+	<h2><p>Emperial ⚔ Commlink</p></h2><hr>
 	<a  src="/r.png" alt="r" frameborder="0"></a></a>
 	<div id="ip-address"></div>
 	<a href="https://fast.jessejesse.com/"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAwCAMAAABUpcipAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALx2UD0AAAASdFJOUwCVQIjoErd49DEGyaZMZ1nYIwwQr6cAAAJkSURBVDjLjVTXlsQgCFUsqFj5/49dNInZmdkSHpIjXimXotQUyD2QiepNIFvmnrfeeRaxnf0LFMiSnTfcDkVaOEGa8t0oYNEHjsOhRr4kYLqBTod90afe2Z619oeWxoWLh7VA2mRinEB3BFD78n8ix3rY63n5Enwy8y4fh/weyYuUwP68c8Q2ql8l2nABgx0/IUCTLxhVDHAomo2uGfA9w3ecttqYqjOVZpbJpGO15BGxdjx9iAf0+eDCMsSlR9fCWQdNUpgZLjbDelOblV4uVL5VjFVeJxTGxIf2Ij0U5SfQq8rde+qUjZ9ECSVYIki1gpcrPVSyE2iTKt6GRoGthtg0qHJSD5BWGhDm92iDlAqcZJYPovRh0ah/xIU+f92mf4CGaf6I/zEJbFfWZEP803EverWPN5V+d16cbiovwuVbzXgxOtoFoxAlMF9X7mI3x7CnDZxKIUc3iunWuCSgvB4aeYJpaOtrHLF5Wr1MUk9cb52TbgHnChVMcwoSoBT94ABYqqk336b5bn3Jm57MWfMyQ0EmaZcIg0fjQ73OVUYi0MldrXv6gF9mXkrP1VxmyMpS6RKSi2ZOaatrBGE4GXr27jQ4reRxbwWus5Bb7NAMd7y1hLvHJVnaOGh3ptNBc00mCWUtYRNBWVnzLOpg3V2eFvBI00FFo7XBCutaeOWXnvV5IHx0gZN6Z/3WNiDWPprOyTZ9ez62Is7YrmZI9LFYCt6Z8Y7fwGc31suKbIOr0FB+XGWb1Q38cxxksNirJzJX8hNcmh3xyKJU3T4C9qcxStb6ERBXSz6QyAyPgIroB+UX1zwhnEDPnW8AAAAASUVORK5CYII=" title="VPN List" alt="Virtual Private Network Providers List"> 
@@ -237,19 +237,19 @@ function initUI(){
 </div>
 </head>
 <body>
-<h1></h1>
+
 <div id="testWrapper">
 	<div id="startStopBtn" onclick="startStop()"></div>
 	<div id="test">
         <div class="testGroup">
 			<div class="testArea2">
-				<div class="testName">Ping</div>
-				<div id="pingText" class="meterText" style="color:#620f0f"></div>
+				<div class="testName">Jedi Ping</div>
+				<div id="pingText" class="meterText" style="color:#2FF924"></div>
 				<div class="unit">mili</div>
 			</div>
 			<div class="testArea2">
-				<div class="testName">Jekyll</div>
-				<div id="jitText" class="meterText" style="color:#6e1010"></div>
+				<div class="testName">Sith Jitter</div>
+				<div id="jitText" class="meterText" style="color:#a50505"></div>
 				<div class="unit">mili</div>
 			</div>
 		</div>
@@ -269,7 +269,7 @@ function initUI(){
 			</div>
 			<div id="ipArea">
 				<span id="ip"></span><br><br><br><br>
-     <h3><a href="https://r2.jessejesse.workers.dev" src="https://r2.jessejesse.workers.dev" style="color:rgb(92, 20, 7)">Geo Location</a>&nbsp;&nbsp;&nbsp;<a href="https://timeofday.jessejesse.workers.dev" src="https://timeofday.jessejesse.workers.dev" style="color:rgb(70, 9, 9)">Local Time</a>&nbsp;&nbsp;&nbsp;<a href="https://api.maptiler.com/maps/9702cc09-72a0-4eb8-ad80-8de6acc519cc/?key=tPztIaJzZt76cIwIvEJG#1/0/0" src="https://api.maptiler.com/maps/9702cc09-72a0-4eb8-ad80-8de6acc519cc/?key=tPztIaJzZt76cIwIvEJG#1/0/0" style="color:rgb(99, 21, 21)">World Map</a>&nbsp;&nbsp;&nbsp;<a href="https://weather.jessejesse.workers.dev/" src="https://weather.jessejesse.workers.dev/" style="color:rgb(70, 9, 9)">Geo Weather</a>&nbsp;&nbsp;&nbsp;<div></h3><br><br><a href="https://fast.jessejesse.com" style="color:#111010">𝓕𝓪𝓼𝓽.𝓙𝓮𝓼𝓼𝓮𝓙𝓮𝓼𝓼𝓮.𝓬𝓸𝓶&nbsp;®</div>
+     <h3><a href="https://r2.jessejesse.workers.dev" src="https://r2.jessejesse.workers.dev" style="color:rgb(92, 20, 7)">Geo Coordinates</a>&nbsp;&nbsp;&nbsp;<a href="https://timeofday.jessejesse.workers.dev" src="https://timeofday.jessejesse.workers.dev" style="color:rgb(70, 9, 9)">Earth Time</a>&nbsp;&nbsp;&nbsp;<a href="https://api.maptiler.com/maps/9702cc09-72a0-4eb8-ad80-8de6acc519cc/?key=tPztIaJzZt76cIwIvEJG#1/0/0" src="https://api.maptiler.com/maps/9702cc09-72a0-4eb8-ad80-8de6acc519cc/?key=tPztIaJzZt76cIwIvEJG#1/0/0" style="color:rgb(99, 21, 21)">Teleporter</a>&nbsp;&nbsp;&nbsp;<a href="https://weather.jessejesse.workers.dev/" src="https://weather.jessejesse.workers.dev/" style="color:rgb(70, 9, 9)">Geo Weather</a>&nbsp;&nbsp;&nbsp;<div></h3><br><br><a href="https://fast.jessejesse.com" style="color:#111010">𝓕𝓪𝓼𝓽.𝓙𝓮𝓼𝓼𝓮𝓙𝓮𝓼𝓼𝓮.𝓬𝓸𝓶&nbsp;®</div>
 
 
 	</div>
@@ -277,3 +277,11 @@ function initUI(){
 </body><div class="footer">
 </div>
 </html>
+<style>
+  body{
+      background-image: url("dv2.png");
+      background-repeat: repeat-x;
+      background-size: 100%;
+      background-attachment: fixed;
+  }
+</style>
